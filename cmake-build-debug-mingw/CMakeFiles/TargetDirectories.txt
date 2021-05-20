@@ -1,0 +1,3 @@
+C:/Users/Павел/PP-second-semestr/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/Павел/PP-second-semestr/cmake-build-debug-mingw/CMakeFiles/PP.dir
+C:/Users/Павел/PP-second-semestr/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
