@@ -323,7 +323,10 @@ int main() {
         ind->goals = 0;
         result[l] = ind;
     }
-    for(int u = 0; u < 30; u++) {
+    int a;
+    cout<<"Введите число популяций, на которых будет обучаться генетический алгоритм\n";
+    cin>> a;
+    for(int u = 0; u < a; u++) {
         if(flag_2 == 1){
             for(int v = 0; v < 30; v++){
                 Individ::array_with_random_actions(result[v]);
@@ -509,46 +512,45 @@ int main() {
                     }
                     j = 0;
                 }
-                if (result[k]->ptr > 100000) { break; }
                 if (result[k]->priority == 1) {
-                   /* cout << "priority = 1, instruction =" << result[k]->instructions[result[k]->ptr];
+                    cout << "priority = 1, instruction =" << result[k]->instructions[result[k]->ptr];
                     cout << " sum = " << sum;
                     cout << " place = " << result[k]->place;
                     cout << " size one = " << one.size();
-                    cout << " ptr = " << result[k]->ptr << endl;*/
+                    cout << " ptr = " << result[k]->ptr << endl;
                     Individ::read_inst(result[k], &one, &sum);
                 }
                 if (result[k]->priority == 2) {
-                    /*cout << "priority = 2, instruction =" << result[k]->instructions[result[k]->ptr];
+                    cout << "priority = 2, instruction =" << result[k]->instructions[result[k]->ptr];
                     cout << " sum = " << sum;
                     cout << " place = " << result[k]->place;
                     cout << " size two = " << two.size();
-                    cout << " ptr = " << result[k]->ptr << endl;*/
+                    cout << " ptr = " << result[k]->ptr << endl;
                     Individ::read_inst(result[k], &two, &sum);
                 }
                 if (result[k]->priority == 3) {
-                    /*cout << "priority = 3, instruction =" << result[k]->instructions[result[k]->ptr];
+                    cout << "priority = 3, instruction =" << result[k]->instructions[result[k]->ptr];
                     cout << " sum = " << sum;
                     cout << " place = " << result[k]->place;
                     cout << " size three = " << three.size();
-                    cout << " ptr = " << result[k]->ptr << endl;*/
+                    cout << " ptr = " << result[k]->ptr << endl;
                     Individ::read_inst(result[k], &three, &sum);
 
                 }
                 if (result[k]->priority == 4) {
-                    /*cout << "priority = 4, instruction =" << result[k]->instructions[result[k]->ptr];
+                    cout << "priority = 4, instruction =" << result[k]->instructions[result[k]->ptr];
                     cout << " sum = " << sum;
                     cout << " place = " << result[k]->place;
                     cout << " size four = " << four.size();
-                    cout << " ptr = " << result[k]->ptr << endl;*/
+                    cout << " ptr = " << result[k]->ptr << endl;
                     Individ::read_inst(result[k], &four, &sum);
                 }
                 if (result[k]->priority == 5) {
-                    /*cout << "priority = 5, instruction =" << result[k]->instructions[result[k]->ptr];
+                    cout << "priority = 5, instruction =" << result[k]->instructions[result[k]->ptr];
                     cout << " sum = " << sum;
                     cout << " place = " << result[k]->place;
                     cout << " size five = " << five.size();
-                    cout << " ptr = " << result[k]->ptr << endl;*/
+                    cout << " ptr = " << result[k]->ptr << endl;
                     Individ::read_inst(result[k], &five, &sum);
                 }
                 result[k]->ptr++;
